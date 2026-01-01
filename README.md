@@ -1,16 +1,46 @@
-# React + Vite
+# Debounce API Call in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that demonstrates how to handle API calls efficiently using the **debounce concept** while typing in an input field.  
+The app fetches food suggestions from an external API and displays results in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Real-time search suggestions
+- Optimized API calls using input-based triggering
+- Prevents unnecessary API requests
+- Clean and minimal UI
+- Built using React Hooks
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript (ES6)
+- Fetch API
+- Tailwind CSS
+
+---
+
+## 📸 How It Works
+
+1. User types in the input field.
+2. The input value updates using `useState`.
+3. An API call is triggered on input change using `useEffect`.
+4. Matching food items are fetched and displayed in a dropdown list.
+
+---
+
+## 📂 Code Overview
+
+- `useState` → Manage input value and API response list
+- `useEffect` → Trigger API call on input change
+- `fetch()` → Fetch data from external API
+- Conditional rendering → Show suggestions only when data exists
+
+---
+
+## 🔗 API Used
+
